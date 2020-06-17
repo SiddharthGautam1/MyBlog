@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Top 5 Blogs</title>
+ <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <link rel="icon" href="./favicon.ico"/>
+
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+ 
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+  font-family: 'Sriracha', cursive;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+p {
+    font-family: 'Lobster', cursive;
+}
+
+
+</style>
+<body>
+
+<div class="main">
+
+ <!--cards -->
+<a href="https://www.wix.com">
+<div class="card">
+
+   <div class="image">
+      <img src="data:image/png;base64,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">
+   </div>
+   <div class="title">
+    <h1>
+   Wix</h1>
+   </div>
+   <div class="des">
+    <p>Wix.com Ltd. is an Israeli software company, providing cloud-based web development services. It allows users to create HTML5 websites and mobile sites through the use of online drag and drop</p>
+   <button class="btn btn-outline-info"><a href="https://www.wix.com" target="_blank">Go To Website...</button></a>
+   </div>
+   </div>
+</a>
+<!--cards -->
+
+<a href="https://www.blogger.com">
+<div class="card">
+
+<div class="image">
+   <img src="./blog 123.jpg">
+</div>
+<div class="title">
+ <h1>
+Blogger</h1>
+</div>
+<div class="des">
+ <p>Blogger is a blog-publishing service that allows multi-user blogs with time-stamped entries. It was developed by Pyra Labs, which was bought by Google in 2003. The blogs are hosted by Google</p>
+<button class="btn btn-outline-info"><a href="https://www.blogger.com" target="_blank">Go To Website...</button>
+</div>
+</div>
+</a>
+<!--cards -->
+
+<a href="https://getbootstrap.com">
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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">
+</div>
+<div class="title">
+ <h1>
+Bootstrap</h1>
+</div>
+<div class="des">
+  <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+  <button class="btn btn-outline-info"><a href="https://getbootstrap.com" target="_blank">Go To Website...</button>
+</div>
+</div>
+</a>
+<!--cards -->
+
+<a href="https://wordpress.com/">
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAMAAADUbMsyAAAAaVBMVEX///8yNzwAAAAsMTcAAAkmLDIfJiz6+vo1Oj/Y2dnl5eb09PQ8QEUAAAZ+gYObnJ4ABhNnam3HyMlydXenqKlWWVy5urtKTlJucHPOz9CSk5Wur7BfYmahoqQXHyYPGCCHiYsAEBpCR0sIJKduAAAELUlEQVRYhe1YaXeqMBA1ZGGzyI4QFu3//5FvJpkAtVWw9X1zzqnWADe5sw+Hw1ve8pa3/H/x4yj2XwcXlsVRfAgBf8eiDF8AmHCRsio5lbo8JRVLBU/+Bls3XprV0WolqrPUa+pfI+aBF+jvSvQ1rOe/QozPIqDz+FGuh9Og84h2qANxjp+HbGXaWWydBdOopJRqnIJMW6wule2zkNpjxhRhcVWcLcLVtbAXmKefg+y8HmlG2bQGJNgpQ6v5vdc9BZkW+DWM3xEN6jjg5SJ9AlR7COln44+IKGOFai3202+9Hj7jQN6FZFNh0Hpvp6FiyUCXMfuZtxFJoeQzuc+lzik84QcPINUcR2F63gOZC9R8rzjnUiIwl3wWafQhl+DqxJ6ICgL40J9VnxVJl3HGky45Z1VV9f056S4Aypvb2zek9tYJwr8y+fV6BUcP7t7/szTLA2Gtz3DOS50T1zivOyQ/uWyHBgqabxg3Eq5cLk9NWEp1HWjFU0afvKDfUYvOvJVPkxTO5NQ++/yRFgpyhpFgYnBkP002MHkGd17dBs7rJ0rLOe3irBR7wD7jjyFDARrXHxQdrTuopMD2ndOOVkMRaqoWj8mXKZwoU8TGX9z8hjwttBPQitLyIWbBTAhx/4b8mH8lTwtaBXAnK+7BGTlWsO80Q7QTQThLz+R5Yo+Nmq6O9+CMiMSchff0e8kalCsSvrZSYHZPxCNI/+OEhCBLkKEvM/n6hjyDTcKJKTDS6eNRhxILUPcAOIo8f7Y8+piReSE2O0oIh1I8SniR0BaTf95AuE1msx19o1yJxER0D3B9ztnLHXmnDEeeV/bf7XPO+py9vJ0h3HPK2uxinXVbn87ubMln3FHX4Zo8pvqJ/PSx3Z1/Ivl2Tf4aH/oLnXyihVqRjjb808bR4tQEAf4ap4FlaC6jOs9IYUcc2XjnzlkcBFJXLriQPJjGn8jFtuLd5iW19nIknwJ1zqlEotnGyFJXO/IS5U9m+dptJmQaAZAi00M9AQ323Kp1M3/aPG8z2kgQ5jSlWsr6RYKnx4pSy3aeN/UoNKZVpYMAh2+4NYwlD7XDKAiL3XY9snXTWMnFZzhZ6qBWCqbxaGuySQLbddPWawtxdRD6MBizYXAbBV3sHWCpXfXdNhbDuIrPJDocV0kTIi03+jVd6J4+xPVLconP+BBdbSahZgHMCPqV6Bj7+iXq67BVdPF5OFF2wsxhBDbhGEI7+zrXf3K+9BvNXC59twnHRL+7/3R9MpPuCUd9qZ+NDPDS7j557uf7keKzm7twKiGRHUue6OeXuWOyXv7JZrHB1RmnemruWOajBl00XM0fti79Zj5a5jg81mU1gEgXNc/Pcat5EyL1y7xJRH4xb36fi4e/z8WH/zG/m/O8/D0Dyuvfh1jYV7+3cfLi90tvectb3nJX/gHySj8bMubSOgAAAABJRU5ErkJggg==">
+</div>
+<div class="title">
+ <h1>
+WordPress</h1>
+</div>
+<div class="des">
+ <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.</p>
+ <button class="btn btn-outline-info"><a href="https://wordpress.com/">Go To Website...</button></a>
+</div>
+</div>
+</a>
+<!--cards -->
+
+<a href="https://www.w3schools.com/html/html_intro.asp">
+<div class="card">
+
+<div class="image">
+   <img src="data:image/png;base64,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">
+</div>
+<div class="title">
+ <h1>
+HTML</h1>
+</div>
+<div class="des">
+ <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript, ASP and PHP.</p>
+ <button class="btn btn-outline-info">Go To Website...</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</body>
+</html>
